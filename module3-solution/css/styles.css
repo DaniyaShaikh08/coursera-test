@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(189, 189, 189);
+  font-family: "Comic Neue", cursive;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: white;
+}
+
+/* HEADER */
+#header-nav {
+  background-color: #4d4c49;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand h1 {
+  /* Food LLC */
+  font-family: "Comic Neue", cursive;
+  color: #00ff48;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.75;
+}
+.navbar-brand {
+  padding-top: 15px;
+}
+
+a:link,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #7e7e7e;
+}
+
+.navbar-light .navbar-toggler {
+  border: 2px solid rgb(123, 128, 131);
+}
+/*END OF HEADER*/
+
+#page-heading {
+  padding: 15px;
+  color: #222;
+}
+
+/*MENU TILES*/
+#menu-tile {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: rgb(84, 83, 83);
+  overflow: hidden;
+}
+
+#menu-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile span {
+  position: absolute;
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: rgb(187, 255, 0);
+}
+
+#menu-tile p {
+  padding-top: 35px;
+  margin: 0px 10px;
+  color: #fff;
+}
+/*END OF MENU TILES*/
+
+/********** Extra small devices only **********/
+@media (max-width: 719px) {
+  /*Header*/
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 5px;
+    /* font-size: 5vw; */
+  }
+
+  #collapsable-nav a {
+    font-size: 1.4em;
+  }
+  /* End Header */
+
+  /* Home Page */
+  #menu-tile {
+    /* width: 300px; */
+    margin: 0 auto 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  .navbar-brand h1 {
+    padding-top: 5px;
+    /* font-size: 5vw; */
+  }
+
+  #menu-tile {
+    width: 300px;
+    margin: 0 auto 15px;
+  }
+}
